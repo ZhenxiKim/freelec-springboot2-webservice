@@ -1,6 +1,6 @@
 buildscript {
     ext{
-        springBootVersion = '2.1.7.RELEASE'//전역변수로 사용하겠
+        springBootVersion = '2.1.7.RELEASE'//전역변수 설정 
     }
     repositories {
         mavenCentral()
@@ -14,7 +14,7 @@ buildscript {
 apply plugin : 'java'
 apply plugin : 'eclipse'
 apply plugin : 'org.springframework.boot'
-apply plugin : 'io.spring.dependency-management'//스프링 부트의 의존성을 관리하는 플러그
+apply plugin : 'io.spring.dependency-management'//스프링 부트의 의존성을 관리하는 플러그인 
 
 
 group 'com.zhenxi.book'
@@ -31,6 +31,8 @@ repositories {
 dependencies{
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.projectlombok:lombok')
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('com.h2database:h2')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

@@ -7,9 +7,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-@SpringBootApplication//스프링 부트의 자동 설정 스프링 빈 읽기와 생성 자동 설정
-//여기부터 읽기때문에 최상단에 있어야함
-//내장 was 실행
+@SpringBootApplication
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class,args);//프로젝트의 메인 클래
