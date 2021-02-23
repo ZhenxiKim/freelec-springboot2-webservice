@@ -13,7 +13,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest//스프링 mvc구조에 집중할 수 있는 테스트 어노테이//@controller @Controlleradvice에서 사용가
+@WebMvcTest
 public class HelloControllerTest {
 
     @Autowired
