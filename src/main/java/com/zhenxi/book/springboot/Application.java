@@ -8,7 +8,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-@EnableJpaAuditing//jpa auditing 활성화
 @SpringBootApplication
 public class Application {
 
