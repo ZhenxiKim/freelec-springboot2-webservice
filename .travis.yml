@@ -9,14 +9,15 @@ branches:
 # Travis CI 서버의 Home
 cache:
   directories:
-    -  '$HOME/.m2/repository'
-    -  '$HOME/.gradle'
+    - '$HOME/.m2/repository'
+    - '$HOME/.gradle'
+
 script: "./gradlew clean build"
 
 
 before_deploy:
   - zip -r freelec-springboot2-webservice *
-  - mkdir -p delploy
+  - mkdir -p deploy
   - mv freelec-springboot2-webservice.zip deploy/freelec-springboot2-webservice.zip
 
 deploy:
